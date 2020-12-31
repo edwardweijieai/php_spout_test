@@ -1,0 +1,12 @@
+{
+    "name": "gitpod/php_spout_test",
+    "authors": [
+        {
+            "name": "edwardweijieai",
+            "email": "edwardweijieai@gmail.com"
+        }
+    ],
+    "require": {
+        "box/spout": "^3.0.0"
+    }
+}
