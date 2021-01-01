@@ -33,3 +33,5 @@ array(1) {
 ### require
 
 "box/spout": "^3.0.0",
+
+"phpoffice/phpspreadsheet": "^1.5",
