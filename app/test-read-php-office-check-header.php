@@ -25,10 +25,12 @@ foreach ($worksheet->getRowIterator() as $row) {
 
             if ($className == 'PhpOffice\PhpSpreadsheet\RichText\RichText') {
                 $richTextElements = $value->getRichTextElements();
-                $text = $richTextElements[0]->getText();
-                
 
-                $value = $text;
+                $valueList = array_map(function ($row) {
+                    return trim($row->getText());
+                }, $richTextElements);
+
+                $value = implode('', $valueList);
             }
         }
 
